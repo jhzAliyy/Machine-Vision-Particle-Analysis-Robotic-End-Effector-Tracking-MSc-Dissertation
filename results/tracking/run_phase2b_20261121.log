@@ -1,0 +1,99 @@
+detector epoch None val None
+
+== 000018 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000018_PSM1.npz
+  PSM1: obs-resid 8.3mm | 2D px median 27.7 P95 85.1 PCK@10 0.09 | 3D median 7.9mm P95 19.9 tip 8.7 jaw 6.3 last100 8.1
+  PSM3: PHASE 导出 1001 帧 -> phase_000018_PSM3.npz
+  PSM3: obs-resid 7.2mm | 2D px median 27.2 P95 66.4 PCK@10 0.111 | 3D median 6.6mm P95 18.5 tip 7.0 jaw 6.8 last100 6.5
+
+== 000019 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000019_PSM1.npz
+  PSM1: obs-resid 7.2mm | 2D px median 26.1 P95 71.3 PCK@10 0.123 | 3D median 6.7mm P95 17.8 tip 8.2 jaw 6.6 last100 8.0
+  PSM3: PHASE 导出 1001 帧 -> phase_000019_PSM3.npz
+  PSM3: obs-resid 6.1mm | 2D px median 29.2 P95 64.3 PCK@10 0.102 | 3D median 5.6mm P95 15.4 tip 7.4 jaw 5.7 last100 5.5
+
+== 000020 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000020_PSM1.npz
+  PSM1: obs-resid 10.4mm | 2D px median 25.1 P95 68.9 PCK@10 0.131 | 3D median 8.5mm P95 35.9 tip 8.5 jaw 7.8 last100 8.5
+  PSM3: PHASE 导出 1001 帧 -> phase_000020_PSM3.npz
+  PSM3: obs-resid 7.3mm | 2D px median 18.7 P95 39.4 PCK@10 0.219 | 3D median 6.3mm P95 19.3 tip 8.3 jaw 6.8 last100 6.3
+
+== 000021 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000021_PSM1.npz
+  PSM1: obs-resid 6.8mm | 2D px median 17.8 P95 62.4 PCK@10 0.215 | 3D median 6.2mm P95 16.7 tip 6.3 jaw 4.8 last100 5.4
+  PSM3: PHASE 导出 1001 帧 -> phase_000021_PSM3.npz
+  PSM3: obs-resid 7.4mm | 2D px median 21.7 P95 70.1 PCK@10 0.157 | 3D median 6.6mm P95 18.1 tip 10.1 jaw 6.4 last100 5.6
+
+== 000022 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000022_PSM1.npz
+  PSM1: obs-resid 6.8mm | 2D px median 18.8 P95 57.2 PCK@10 0.203 | 3D median 6.1mm P95 17.1 tip 6.5 jaw 5.0 last100 5.6
+  PSM3: PHASE 导出 1001 帧 -> phase_000022_PSM3.npz
+  PSM3: obs-resid 6.4mm | 2D px median 14.9 P95 46.7 PCK@10 0.293 | 3D median 5.8mm P95 15.4 tip 5.8 jaw 4.9 last100 5.2
+
+== 000023 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000023_PSM1.npz
+  PSM1: obs-resid 5.0mm | 2D px median 26.5 P95 73.0 PCK@10 0.089 | 3D median 4.6mm P95 12.8 tip 4.6 jaw 3.4 last100 4.4
+  PSM3: PHASE 导出 1001 帧 -> phase_000023_PSM3.npz
+  PSM3: obs-resid 4.1mm | 2D px median 22.9 P95 67.4 PCK@10 0.173 | 3D median 4.0mm P95 9.6 tip 3.8 jaw 3.0 last100 4.2
+
+== 000024 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000024_PSM1.npz
+  PSM1: obs-resid 6.3mm | 2D px median 26.2 P95 68.0 PCK@10 0.103 | 3D median 5.8mm P95 16.4 tip 5.7 jaw 4.9 last100 6.7
+  PSM3: PHASE 导出 1001 帧 -> phase_000024_PSM3.npz
+  PSM3: obs-resid 4.8mm | 2D px median 22.5 P95 65.0 PCK@10 0.152 | 3D median 4.5mm P95 11.6 tip 4.2 jaw 3.9 last100 4.8
+
+== 000025 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000025_PSM1.npz
+  PSM1: obs-resid 4.4mm | 2D px median 29.9 P95 110.7 PCK@10 0.092 | 3D median 4.1mm P95 11.8 tip 4.3 jaw 3.8 last100 5.1
+  PSM3: PHASE 导出 1001 帧 -> phase_000025_PSM3.npz
+  PSM3: obs-resid 5.8mm | 2D px median 37.1 P95 103.2 PCK@10 0.054 | 3D median 5.2mm P95 16.6 tip 4.4 jaw 4.8 last100 5.9
+
+== 000026 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000026_PSM1.npz
+  PSM1: obs-resid 5.9mm | 2D px median 44.6 P95 137.8 PCK@10 0.04 | 3D median 5.7mm P95 13.3 tip 6.0 jaw 5.6 last100 4.7
+  PSM3: PHASE 导出 1001 帧 -> phase_000026_PSM3.npz
+  PSM3: obs-resid 7.5mm | 2D px median 52.1 P95 149.6 PCK@10 0.042 | 3D median 6.7mm P95 19.3 tip 8.2 jaw 7.1 last100 6.9
+
+== 000027 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000027_PSM1.npz
+  PSM1: obs-resid 3.8mm | 2D px median 32.7 P95 90.9 PCK@10 0.062 | 3D median 3.7mm P95 9.7 tip 4.7 jaw 3.4 last100 4.6
+  PSM3: PHASE 导出 1001 帧 -> phase_000027_PSM3.npz
+  PSM3: obs-resid 5.6mm | 2D px median 47.7 P95 105.9 PCK@10 0.038 | 3D median 5.0mm P95 13.5 tip 4.1 jaw 4.1 last100 5.1
+
+== 000028 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000028_PSM1.npz
+  PSM1: obs-resid 8.8mm | 2D px median 27.5 P95 65.4 PCK@10 0.096 | 3D median 8.0mm P95 22.5 tip 9.1 jaw 6.9 last100 9.4
+  PSM3: PHASE 导出 1001 帧 -> phase_000028_PSM3.npz
+  PSM3: obs-resid 7.0mm | 2D px median 26.0 P95 62.6 PCK@10 0.109 | 3D median 6.4mm P95 19.5 tip 8.2 jaw 6.6 last100 6.8
+
+== 000029 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000029_PSM1.npz
+  PSM1: obs-resid 8.4mm | 2D px median 30.0 P95 77.6 PCK@10 0.1 | 3D median 7.8mm P95 20.2 tip 9.4 jaw 6.4 last100 8.4
+  PSM3: PHASE 导出 1001 帧 -> phase_000029_PSM3.npz
+  PSM3: obs-resid 6.9mm | 2D px median 27.1 P95 67.6 PCK@10 0.113 | 3D median 6.4mm P95 17.0 tip 6.7 jaw 5.4 last100 6.4
+
+== 000030 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000030_PSM1.npz
+  PSM1: obs-resid 4.3mm | 2D px median 27.9 P95 80.0 PCK@10 0.101 | 3D median 4.1mm P95 10.9 tip 4.7 jaw 3.4 last100 4.1
+  PSM3: PHASE 导出 1001 帧 -> phase_000030_PSM3.npz
+  PSM3: obs-resid 6.1mm | 2D px median 29.1 P95 94.2 PCK@10 0.086 | 3D median 5.2mm P95 17.6 tip 4.0 jaw 3.7 last100 5.1
+
+== 000031 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000031_PSM1.npz
+  PSM1: obs-resid 5.2mm | 2D px median 29.4 P95 78.1 PCK@10 0.079 | 3D median 4.8mm P95 14.4 tip 4.9 jaw 4.6 last100 5.2
+  PSM3: PHASE 导出 1001 帧 -> phase_000031_PSM3.npz
+  PSM3: obs-resid 5.9mm | 2D px median 40.9 P95 90.4 PCK@10 0.045 | 3D median 5.5mm P95 16.8 tip 5.1 jaw 4.8 last100 5.9
+
+== 000032 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000032_PSM1.npz
+  PSM1: obs-resid 5.0mm | 2D px median 24.2 P95 73.6 PCK@10 0.124 | 3D median 4.6mm P95 13.3 tip 5.3 jaw 4.1 last100 5.3
+  PSM3: PHASE 导出 1001 帧 -> phase_000032_PSM3.npz
+  PSM3: obs-resid 6.1mm | 2D px median 39.4 P95 91.5 PCK@10 0.047 | 3D median 5.5mm P95 20.5 tip 5.7 jaw 4.2 last100 5.5
+
+== 000033 (1001 frames) ==
+  PSM1: PHASE 导出 1001 帧 -> phase_000033_PSM1.npz
+  PSM1: obs-resid 6.4mm | 2D px median 37.5 P95 117.3 PCK@10 0.062 | 3D median 5.8mm P95 18.0 tip 7.0 jaw 5.9 last100 5.2
+  PSM3: PHASE 导出 1001 帧 -> phase_000033_PSM3.npz
+  PSM3: obs-resid 6.5mm | 2D px median 37.1 P95 82.8 PCK@10 0.05 | 3D median 6.0mm P95 22.8 tip 4.9 jaw 4.6 last100 6.4
+
+SUMMARY {'n_arms': 32, 'mean_median_mm': 5.8}

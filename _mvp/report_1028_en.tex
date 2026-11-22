@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{fontspec}
+\setmainfont{Microsoft YaHei}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\setlist{nosep}
+\title{Stage Report (4): Observation Function Defect, Orientation Error Halved, Nine Configurations on the Time-Varying Exam}
+\author{}
+\date{2026-10-28}
+\begin{document}
+\maketitle
+
+\section{Summary}
+This round addressed the observation function defect first and the time-varying error exam second. A seven-step diagnostic chain traced the defect to background outlier contamination of the mean depth residual. After the fix, the orientation error on the constant-bias benchmark dropped from 23.46 to 9.19 degrees while the position error moved from 3.28 to 3.98 cm. Nine configurations were run on the square-wave exam, and configuration H is stable throughout with medians of 5.20 cm and 11.32 degrees, its position error 53\% below the dead-reckoning baseline. Both overlay videos were re-rendered with the new results, and the missing red axes were added to the rendering. Three experiments across two finger-based routes were all ruled out. The closing section gives the gap account against the usability threshold, with data for each of its three entries.
+
+\section{1. The observation function defect}
+The diagnosis began with an anomaly. At the ground-truth pose, the mean depth residual of the point cloud against the depth map was 135 mm while the position error was only 3.28 cm, and the two numbers are incompatible. Seven checks followed. The coordinate-frame hypothesis was rejected by the data, since the tool-point frame and the hand frame nearly coincide with a difference of 1 degree and 6 mm. The time-offset hypothesis was rejected by an alignment matrix whose diagonal is optimal. The miscalibration hypothesis was rejected by the per-frame spread of peak offsets, which reaches 21 degrees on one rotation axis and rules out any constant correction. The final check on residual quantiles found the defect, the median residual is about 40 mm while the 95th percentile reaches 1 to 2.5 m. A few cloud points project onto background depths, and the untrimmed mean is blown up by those outliers. The fix is a 10\% trimmed mean in the scoring function, which discards the worst tenth of the residuals before averaging.
+
+\section{2. Constant-bias results}
+Three trim levels were compared. Without trimming, the scores are 3.28 cm and 23.46 degrees. At 20\% trimming, the orientation improves to 10.86 degrees but the position worsens to 4.80 cm. At 10\% trimming, the position is 3.98 cm and the orientation 9.19 degrees, with the three segments stable between 3.6 and 4.9 cm and between 7.7 and 10.9 degrees and no late divergence. This is the new optimum. The orientation error is cut by 61\% while the position error grows by only 0.7 cm. The rendering layer also gained the missing red axes for the raw-readout pose, so the overlay now shows all three colours, blue for ground truth, red for raw, green for the filter.
+
+\section{3. Nine configurations on the square-wave exam}
+The exam structure was measured from the data first. The injected error switches level every 25 to 35 frames, near frames 20, 50 and 85, with an amplitude of plus or minus 4.99 degrees per joint. Material integrity was verified separately, ground-truth projection coverage stays between 86\% and 100\% across the run and the hand stays 0.6 to 0.8 m from the camera, so the late failure is not a data problem.
+
+Table~\ref{tab:square} lists all nine configurations. A (constant assumption) diverges late. B (time-varying sensing) drifts out of control and its bias estimate reaches 18.9 degrees. C and D (jump detection with re-diffusion) never recover. A' and B' (trimmed observation) improve the early segment and B' reaches a median of 5.31 cm, but the middle and late segments still collapse at 15 cm. F uses score degradation as the jump signal and misses badly, catching one of three true jumps. G's level mirroring rests on a wrong assumption, since the drift far exceeds the level amplitude. H changes three things at once. The jump signal becomes the frame-to-frame jump of the raw-readout pose, which moves more than 3 cm in a single frame at a switch and is direct and reliable. The bias estimate gains a Gaussian prior with a standard deviation of 10 degrees, which clamps the drift on weakly observable dimensions. H's jump detector fires exactly at frames 49 and 83, matching the measured switch points, and its three segments score 4.5, 5.3 and 4.8 cm, stable throughout, recovering within 5 to 10 frames after each switch.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Configuration & Pos (cm) & Ori (deg) & Early (cm) & Mid (cm) & Late (cm) \\
+\midrule
+Dead reckoning & 11.08 & 14.38 & sync & sync & sync \\
+A constant assumption & 5.41 & 12.08 & 3.6 & 3.2 & 11.7 \\
+B time-varying sensing & 13.94 & 30.46 & 3.8 & 15.0 & 15.0 \\
+C jump re-diffusion (2 deg) & 13.34 & 32.97 & 2.6 & 13.9 & 14.2 \\
+D jump re-diffusion (5 deg) & 13.53 & 35.88 & as C & as C & as C \\
+A' constant plus trimming & 5.02 & 19.56 & as A & as A & as A \\
+B' time-varying plus trimming & 5.31 & 12.10 & 3.8 & 15.0 & 15.0 \\
+F trimming plus score detection & 8.43 & 16.40 & 4.3 & 9.0 & 14.6 \\
+G trimming plus level mirroring & 9.32 & 16.94 & 4.3 & 9.0 & 14.5 \\
+H trimming plus readout detection plus prior & 5.20 & 11.32 & 4.5 & 5.3 & 4.8 \\
+\bottomrule
+\end{tabular}
+\caption{Nine configurations on the square-wave exam. H is the final one, B' parameters of a 0.5 degree floor and an annealing constant of 60, plus trimmed observation, plus readout-jump detection triggering re-diffusion, plus a Gaussian prior on the bias.}
+\label{tab:square}
+\end{table}
+
+Four mechanisms follow. First, the level-switching period and the filter's convergence time constant are of the same order, so a constant-bias model is structurally half a period behind, which is the common cause of the collapse in B', F and G. Second, score degradation is an unreliable jump signal and the readout jump is the reliable one. Third, the bias estimate on weakly observable dimensions random-walks out of control, and a Gaussian prior is the minimal clamp. Fourth, the trimmed mean is the precondition of the whole repair, without a clean observation the later mechanisms have nothing to act on.
+
+\section{4. Finger routes ruled out}
+Three finger-based routes for orientation were tried and all ruled out. The first assumed a fixed convention rotation between the mesh frame and the measured finger frame, but the rotations solved at the three finger roots differ pairwise by 48 to 106 degrees, so no single convention rotation exists. The second mounted the finger meshes on the measured chain frames, and the discriminative margin dropped on all three axes over the 20 real frames. The third skipped the meshes and generated capsule points along the measured finger positions, and the margin still dropped. The reason is the same throughout, in the depth map the fingers are thin structures and usually folded against the palm, so adding them to the cloud only adds noise. The point cloud therefore stays palm plus forearm, the optimal configuration after three experiments.
+
+\section{5. Conclusions and the gap account}
+Three conclusions. First, background outlier contamination in the observation function was the main reason the orientation error stuck at 23 degrees for months, and after the fix it is 9.19 degrees. Second, time-varying errors are trackable, and the correct configuration is trimmed observation plus readout-jump detection plus a bias prior, at 5.20 cm across the whole square-wave exam. Third, the finger routes are ruled out three times, and further orientation gains do not lie there.
+
+The gap account has three entries, each with data. The equipment entry, a monocular depth camera at 0.6 to 0.8 m has an intrinsic accuracy of roughly a few millimetres to 1 cm, which consumes more than half of the usability threshold. The model entry, the point cloud is a palm block plus a forearm capsule with no fingers, and the median depth residual at the ground-truth pose is about 40 mm, which is the physical floor set by model approximation and depth noise. The information entry, rotating the wrist in place barely changes any pixel depth, the measured discriminative margins sit near zero, and part of the orientation error is information that does not exist in the image. The usability threshold is taken as within 1 cm of position and within 2 to 3 degrees of orientation, and the current results are 3 to 4 times short. That gap cannot be closed by algorithm parameters, it needs stereo vision, an accurately scanned model and multi-sensor fusion, which is work of another order of magnitude. On the academic scale the results of this round stand, the diagnostic chain is complete, the fix has controls, nine configurations have failure analyses, and every number is reproducible.
+
+\end{document}

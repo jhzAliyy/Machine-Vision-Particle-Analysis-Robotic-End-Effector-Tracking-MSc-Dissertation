@@ -1,0 +1,240 @@
+== Option A 四段分析：主配置 F=0.25 相对分割, T_MIN=0.5s, R×1.5, W=10s ==
+  000000 PSM1: episodes=6  A 11.8s / C 3.1s / M 11.2s / R 7.2s / grasp 11.2s  pct A35 C9 M34 R22 other 0
+  000000 PSM3: episodes=6  A 17.4s / C 1.5s / M 11.2s / R 3.3s / grasp 11.2s  pct A52 C5 M34 R10 other 0
+  000001 PSM1: episodes=6  A 14.3s / C 2.5s / M 11.2s / R 5.3s / grasp 11.2s  pct A43 C8 M34 R16 other 0
+  000001 PSM3: episodes=6  A 14.0s / C 3.9s / M 11.2s / R 4.2s / grasp 11.2s  pct A42 C12 M34 R13 other 0
+  000002 PSM1: episodes=6  A 15.4s / C 4.1s / M 11.2s / R 2.6s / grasp 11.2s  pct A46 C12 M34 R8 other 0
+  000002 PSM3: episodes=6  A 15.0s / C 2.8s / M 11.2s / R 4.4s / grasp 11.2s  pct A45 C8 M34 R13 other 0
+  000003 PSM1: episodes=5  A 13.6s / C 5.3s / M 11.2s / R 3.2s / grasp 11.2s  pct A41 C16 M33 R10 other 0
+  000003 PSM3: episodes=5  A 16.3s / C 4.8s / M 11.2s / R 1.1s / grasp 11.2s  pct A49 C14 M33 R3 other 0
+  000004 PSM1: episodes=5  A 5.7s / C 12.9s / M 11.2s / R 2.5s / grasp 11.2s  pct A17 C39 M33 R7 other 3
+  000004 PSM3: episodes=5  A 10.4s / C 6.0s / M 11.2s / R 2.1s / grasp 11.2s  pct A31 C18 M33 R6 other 11
+  000005 PSM1: episodes=5  A 13.0s / C 6.9s / M 11.2s / R 2.2s / grasp 11.2s  pct A39 C21 M33 R7 other 0
+  000005 PSM3: episodes=5  A 13.5s / C 4.9s / M 11.2s / R 3.0s / grasp 11.2s  pct A40 C15 M33 R9 other 2
+  000006 PSM1: episodes=5  A 16.0s / C 5.6s / M 11.2s / R 0.6s / grasp 11.2s  pct A48 C17 M33 R2 other 0
+  000006 PSM3: episodes=5  A 4.9s / C 13.3s / M 11.2s / R 2.3s / grasp 11.2s  pct A15 C40 M33 R7 other 5
+  000007 PSM1: episodes=5  A 8.7s / C 10.1s / M 11.2s / R 1.8s / grasp 11.2s  pct A26 C30 M33 R5 other 5
+  000007 PSM3: episodes=5  A 12.6s / C 4.3s / M 11.2s / R 5.3s / grasp 11.2s  pct A38 C13 M33 R16 other 0
+  000008 PSM1: episodes=5  A 7.1s / C 10.3s / M 11.2s / R 2.7s / grasp 11.2s  pct A21 C31 M33 R8 other 6
+  000008 PSM3: episodes=5  A 5.9s / C 10.1s / M 11.2s / R 4.9s / grasp 11.2s  pct A18 C30 M33 R15 other 4
+  000009 PSM1: episodes=5  A 13.1s / C 8.3s / M 11.2s / R 0.8s / grasp 11.2s  pct A39 C25 M33 R2 other 0
+  000009 PSM3: episodes=4  A 4.1s / C 9.8s / M 15.6s / R 1.0s / grasp 11.2s  pct A12 C29 M47 R3 other 9
+  000010 PSM1: episodes=5  A 10.6s / C 7.4s / M 11.2s / R 1.9s / grasp 11.2s  pct A32 C22 M33 R6 other 7
+  000010 PSM3: episodes=5  A 9.4s / C 9.0s / M 11.2s / R 3.3s / grasp 11.2s  pct A28 C27 M33 R10 other 2
+  000011 PSM1: episodes=5  A 11.3s / C 10.1s / M 11.2s / R 0.8s / grasp 11.2s  pct A34 C30 M33 R2 other 0
+  000011 PSM3: episodes=5  A 12.2s / C 5.7s / M 11.2s / R 4.3s / grasp 11.2s  pct A37 C17 M33 R13 other 0
+  000012 PSM1: episodes=3  A 3.0s / C 8.6s / M 20.1s / R 1.5s / grasp 11.2s  pct A9 C26 M60 R4 other 1
+  000012 PSM3: episodes=5  A 14.5s / C 5.7s / M 11.2s / R 1.9s / grasp 11.2s  pct A44 C17 M33 R6 other 0
+  000013 PSM1: episodes=5  A 10.1s / C 8.6s / M 11.2s / R 1.2s / grasp 11.2s  pct A30 C26 M33 R4 other 7
+  000013 PSM3: episodes=5  A 6.4s / C 13.5s / M 11.2s / R 1.6s / grasp 11.2s  pct A19 C41 M33 R5 other 2
+  000014 PSM1: episodes=5  A 13.7s / C 6.9s / M 11.2s / R 1.4s / grasp 11.2s  pct A41 C21 M33 R4 other 0
+  000014 PSM3: episodes=5  A 8.8s / C 12.1s / M 11.2s / R 0.3s / grasp 11.2s  pct A26 C36 M33 R1 other 3
+  000015 PSM1: episodes=5  A 12.0s / C 7.0s / M 11.2s / R 3.2s / grasp 11.2s  pct A36 C21 M33 R9 other 0
+  000015 PSM3: episodes=5  A 15.2s / C 6.5s / M 11.2s / R 0.5s / grasp 11.2s  pct A45 C19 M33 R2 other 0
+  000016 PSM1: episodes=4  A 2.5s / C 11.2s / M 15.6s / R 1.0s / grasp 11.2s  pct A8 C34 M47 R3 other 9
+  000016 PSM3: episodes=5  A 12.9s / C 6.0s / M 11.2s / R 3.4s / grasp 11.2s  pct A39 C18 M33 R10 other 0
+  000017 PSM1: episodes=4  A 2.5s / C 7.6s / M 15.5s / R 3.3s / grasp 11.0s  pct A7 C23 M46 R10 other 14
+  000017 PSM3: episodes=4  A 3.5s / C 8.1s / M 15.5s / R 3.9s / grasp 11.0s  pct A10 C24 M46 R12 other 7
+  000018 PSM1: episodes=5  A 5.2s / C 6.0s / M 11.0s / R 8.3s / grasp 11.0s  pct A15 C18 M33 R25 other 9
+  000018 PSM3: episodes=5  A 7.1s / C 8.3s / M 11.0s / R 7.0s / grasp 11.0s  pct A21 C25 M33 R21 other 0
+  000019 PSM1: episodes=5  A 5.2s / C 7.9s / M 11.2s / R 8.2s / grasp 11.2s  pct A16 C24 M33 R24 other 3
+  000019 PSM3: episodes=3  A 2.8s / C 6.2s / M 20.1s / R 4.1s / grasp 11.2s  pct A8 C19 M60 R12 other 0
+  000020 PSM1: episodes=5  A 10.0s / C 6.5s / M 11.2s / R 5.6s / grasp 11.2s  pct A30 C20 M33 R17 other 0
+  000020 PSM3: episodes=5  A 7.2s / C 6.6s / M 11.2s / R 8.2s / grasp 11.2s  pct A21 C20 M33 R25 other 1
+  000021 PSM1: episodes=4  A 7.8s / C 5.4s / M 15.5s / R 3.8s / grasp 11.0s  pct A23 C16 M46 R11 other 3
+  000021 PSM3: episodes=5  A 8.7s / C 3.4s / M 11.2s / R 5.0s / grasp 11.2s  pct A26 C10 M33 R15 other 15
+  000022 PSM1: episodes=5  A 8.3s / C 9.4s / M 11.2s / R 4.5s / grasp 11.2s  pct A25 C28 M33 R13 other 0
+  000022 PSM3: episodes=5  A 8.3s / C 8.6s / M 11.2s / R 5.3s / grasp 11.2s  pct A25 C26 M33 R16 other 0
+  000023 PSM1: episodes=5  A 10.9s / C 0.9s / M 11.2s / R 10.4s / grasp 11.2s  pct A33 C3 M33 R31 other 0
+  000023 PSM3: episodes=5  A 3.3s / C 4.5s / M 11.2s / R 10.6s / grasp 11.2s  pct A10 C14 M33 R32 other 11
+  000024 PSM1: episodes=5  A 6.9s / C 8.5s / M 11.2s / R 6.7s / grasp 11.2s  pct A21 C26 M33 R20 other 0
+  000024 PSM3: episodes=5  A 10.8s / C 4.8s / M 11.2s / R 6.6s / grasp 11.2s  pct A32 C14 M33 R20 other 0
+  000025 PSM1: episodes=5  A 7.6s / C 7.1s / M 11.2s / R 7.5s / grasp 11.2s  pct A23 C21 M33 R22 other 0
+  000025 PSM3: episodes=5  A 6.2s / C 9.2s / M 11.2s / R 6.8s / grasp 11.2s  pct A18 C28 M33 R20 other 0
+  000026 PSM1: episodes=5  A 6.1s / C 9.7s / M 11.2s / R 6.0s / grasp 11.2s  pct A18 C29 M33 R18 other 1
+  000026 PSM3: episodes=5  A 9.3s / C 4.1s / M 11.2s / R 8.8s / grasp 11.2s  pct A28 C12 M33 R26 other 0
+  000027 PSM1: episodes=5  A 3.0s / C 7.0s / M 11.2s / R 7.1s / grasp 11.2s  pct A9 C21 M33 R21 other 16
+  000027 PSM3: episodes=4  A 2.9s / C 8.6s / M 15.6s / R 2.9s / grasp 11.2s  pct A9 C26 M47 R9 other 10
+  000028 PSM1: episodes=4  A 5.9s / C 6.9s / M 15.5s / R 3.2s / grasp 11.0s  pct A18 C21 M46 R10 other 6
+  000028 PSM3: episodes=5  A 4.7s / C 9.5s / M 11.0s / R 4.7s / grasp 11.0s  pct A14 C28 M33 R14 other 10
+  000029 PSM1: episodes=5  A 5.5s / C 11.9s / M 11.2s / R 4.7s / grasp 11.2s  pct A17 C36 M33 R14 other 0
+  000029 PSM3: episodes=4  A 2.0s / C 7.3s / M 15.6s / R 5.5s / grasp 11.2s  pct A6 C22 M47 R16 other 9
+  000030 PSM1: episodes=5  A 3.8s / C 8.0s / M 11.2s / R 8.0s / grasp 11.2s  pct A11 C24 M33 R24 other 7
+  000030 PSM3: episodes=5  A 6.5s / C 8.8s / M 11.2s / R 5.3s / grasp 11.2s  pct A19 C26 M33 R16 other 5
+  000031 PSM1: episodes=5  A 6.1s / C 4.5s / M 11.2s / R 10.8s / grasp 11.2s  pct A18 C14 M33 R32 other 2
+  000031 PSM3: episodes=5  A 5.6s / C 6.1s / M 11.2s / R 7.2s / grasp 11.2s  pct A17 C18 M33 R22 other 10
+  000032 PSM1: episodes=4  A 3.3s / C 10.3s / M 15.6s / R 2.5s / grasp 11.2s  pct A10 C31 M47 R7 other 5
+  000032 PSM3: episodes=4  A 1.9s / C 12.1s / M 15.6s / R 0.4s / grasp 11.2s  pct A6 C36 M47 R1 other 10
+  000033 PSM1: episodes=5  A 8.3s / C 9.3s / M 11.2s / R 4.6s / grasp 11.2s  pct A25 C28 M33 R14 other 0
+  000033 PSM3: episodes=5  A 6.1s / C 10.8s / M 11.2s / R 5.3s / grasp 11.2s  pct A18 C32 M33 R16 other 0
+== 敏感性 ==
+  F=0.15 T=0.3s R×1.0 → 68 臂 / 346 ep / manip 中位 1.7
+  F=0.15 T=0.3s R×1.5 → 68 臂 / 343 ep / manip 中位 1.7
+  F=0.15 T=0.3s R×2.0 → 68 臂 / 327 ep / manip 中位 1.7
+  F=0.15 T=0.5s R×1.0 → 68 臂 / 346 ep / manip 中位 1.7
+  F=0.15 T=0.5s R×1.5 → 68 臂 / 343 ep / manip 中位 1.7
+  F=0.15 T=0.5s R×2.0 → 68 臂 / 327 ep / manip 中位 1.7
+  F=0.15 T=1.0s R×1.0 → 68 臂 / 334 ep / manip 中位 1.7
+  F=0.15 T=1.0s R×1.5 → 68 臂 / 331 ep / manip 中位 1.7
+  F=0.15 T=1.0s R×2.0 → 68 臂 / 315 ep / manip 中位 1.7
+  F=0.25 T=0.3s R×1.0 → 68 臂 / 345 ep / manip 中位 2.24
+  F=0.25 T=0.3s R×1.5 → 68 臂 / 332 ep / manip 中位 2.24
+  F=0.25 T=0.3s R×2.0 → 68 臂 / 295 ep / manip 中位 2.24
+  F=0.25 T=0.5s R×1.0 → 68 臂 / 345 ep / manip 中位 2.24
+  F=0.25 T=0.5s R×1.5 → 68 臂 / 332 ep / manip 中位 2.24
+  F=0.25 T=0.5s R×2.0 → 68 臂 / 295 ep / manip 中位 2.24
+  F=0.25 T=1.0s R×1.0 → 68 臂 / 345 ep / manip 中位 2.24
+  F=0.25 T=1.0s R×1.5 → 68 臂 / 332 ep / manip 中位 2.24
+  F=0.25 T=1.0s R×2.0 → 68 臂 / 295 ep / manip 中位 2.24
+  F=0.40 T=0.3s R×1.0 → 68 臂 / 342 ep / manip 中位 2.9
+  F=0.40 T=0.3s R×1.5 → 68 臂 / 297 ep / manip 中位 2.9
+  F=0.40 T=0.3s R×2.0 → 68 臂 / 240 ep / manip 中位 2.9
+  F=0.40 T=0.5s R×1.0 → 68 臂 / 342 ep / manip 中位 2.9
+  F=0.40 T=0.5s R×1.5 → 68 臂 / 297 ep / manip 中位 2.9
+  F=0.40 T=0.5s R×2.0 → 68 臂 / 240 ep / manip 中位 2.9
+  F=0.40 T=1.0s R×1.0 → 68 臂 / 342 ep / manip 中位 2.9
+  F=0.40 T=1.0s R×1.5 → 68 臂 / 297 ep / manip 中位 2.9
+  F=0.40 T=1.0s R×2.0 → 68 臂 / 240 ep / manip 中位 2.9
+== 写出 C:\Users\Aliyy Gingko\Desktop\workspace\space9_class\uk_supervisor\dissertation\results\phase_metrics.json ==
+{
+ "method": {
+  "source": "supervisor email 2026-11-19, Option A",
+  "time_base": "33.366667 s / 1001 frames per video (ffprobe, all 34 packs)",
+  "grasp_threshold": "per-arm quantile split of official gripper_angle: angle < p2 + F*(p98-p2), F=0.25 (periodic triangle wave, near-uniform distribution)",
+  "t_min_s": 0.5,
+  "r_mult": 1.5,
+  "w_approach_s": 10.0,
+  "tip": "PF tracked tip (npz tip, camera frame, mm)",
+  "grasp_signal": "official gripper_angle.yaml (controller, rad)",
+  "task_structure": "scripted periodic manipulation (per-arm jaw wave ~5.5s period; GT jaw distance vs official angle corr 0.58-0.98 on 3-arm spot check)"
+ },
+ "n_arms": 68,
+ "n_arms_with_episodes": 68,
+ "n_episodes_total": 332,
+ "approach_duration_s": {
+  "n": 332,
+  "median": 1.635,
+  "iqr": [
+   0.726,
+   2.569
+  ],
+  "mean": 1.744
+ },
+ "contact_duration_s": {
+  "n": 332,
+  "median": 1.168,
+  "iqr": [
+   0.434,
+   2.369
+  ],
+  "mean": 1.518
+ },
+ "manipulation_duration_s": {
+  "n": 332,
+  "median": 2.236,
+  "iqr": [
+   2.236,
+   2.236
+  ],
+  "mean": 2.474
+ },
+ "grasp_duration_s": {
+  "n": 332,
+  "median": 2.236,
+  "iqr": [
+   2.236,
+   2.236
+  ],
+  "mean": 2.287
+ },
+ "retract_duration_s": {
+  "n": 332,
+  "median": 0.567,
+  "iqr": [
+   0.0,
+   1.568
+  ],
+  "mean": 0.873
+ },
+ "approach_path_mm_per_arm": {
+  "median": 199.7
+ },
+ "approach_mean_vel_mm_s_per_arm": {
+  "median": 21.4
+ },
+ "contact_path_mm_per_arm": {
+  "median": 168.8
+ },
+ "contact_mean_vel_mm_s_per_arm": {
+  "median": 22.1
+ },
+ "manipulation_path_mm_per_arm": {
+  "median": 273.3
+ },
+ "manipulation_mean_vel_mm_s_per_arm": {
+  "median": 23.4
+ },
+ "retract_path_mm_per_arm": {
+  "median": 71.5
+ },
+ "retract_mean_vel_mm_s_per_arm": {
+  "median": 22.5
+ },
+ "pct_time_mean_sd": {
+  "approach": {
+   "mean": 25.5,
+   "sd": 12.53
+  },
+  "contact": {
+   "mean": 22.19,
+   "sd": 8.43
+  },
+  "manipulation": {
+   "mean": 36.17,
+   "sd": 6.23
+  },
+  "retract": {
+   "mean": 12.76,
+   "sd": 7.91
+  },
+  "other": {
+   "mean": 3.39,
+   "sd": 4.34
+  }
+ },
+ "efficiency": {
+  "gt_label_agreement_pct": {
+   "approach": 73.4,
+   "contact": 64.2,
+   "manipulation": 100.0,
+   "retract": 69.7
+  },
+  "n_arms_compared": 68,
+  "tip_err_mm_by_phase": {
+   "approach": {
+    "median": 4.74,
+    "n": 68
+   },
+   "contact": {
+    "median": 5.01,
+    "n": 68
+   },
+   "manipulation": {
+    "median": 4.51,
+    "n": 68
+   },
+   "retract": {
+    "median": 5.33,
+    "n": 68
+   }
+  },
+  "processing_rate_fps": 127.0,
+  "coverage": "68/68 arms, full frames, zero failures (results_all34)"
+ },
+ "optionC_jaw_corr_vs_official": {
+  "median": 0.23,
+  "n_gt_0.3": 10,
+  "n": 39,
+  "note": "vision jaw = det_a-det_tip raw detector; PF state is rigid (no jaw DoF)"
+ }
+}

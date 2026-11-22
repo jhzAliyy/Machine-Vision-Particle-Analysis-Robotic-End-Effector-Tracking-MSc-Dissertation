@@ -1,0 +1,52 @@
+# 大数据与可再生件不入库（只提交增量成果与可复现基线）
+_data/
+_mvp/vendor/
+_mvp/data.npz
+_mvp/ur5_patched.urdf
+_mvp/__pycache__/
+*.pyc
+*.mp4
+# 权重与运行时缓存（体积大，不入库）
+runtime/
+
+# 阶段分析中间产物（68 个 npz 可由重跑再生，不入库；日志与比对 json 留档）
+results/tracking/*.npz
+results/tracking/pf_track_image.json
+paper/build.log
+paper/build2.log
+paper/build3.log
+paper/build4.log
+paper/build5.log
+paper/build*.log
+paper/audit_out.txt
+
+# LaTeX 编译产物（保留 .pdf 与 .tex；aux/log/out/toc 可由 xelatex 两遍再生成）
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+paper_cn/*.aux
+paper_cn/*.log
+paper_cn/*.out
+paper_cn/*.toc
+paper_cn/*.synctex.gz
+reports/**/*.aux
+reports/**/*.log
+reports/**/*.synctex.gz
+archive/**/*.aux
+archive/**/*.log
+archive/**/*.out
+archive/**/*.synctex.gz
+
+# 非工程内容（本地保留，不入库）：工作笔记/导师往来/会议纪要/历史归档/阶段报告/文献库
+/notes/
+/archive/
+/reports/
+/Ref/
+/_papers/
+/map.md
+
+# 论文与撰写文件不入库（本地保留）：仅工程代码与归档结果进仓库
+/paper/
+/paper_cn/
